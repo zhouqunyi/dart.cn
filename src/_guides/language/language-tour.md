@@ -4996,7 +4996,7 @@ _延迟加载_（也常称为 _懒加载_）允许应用在需要时再去加载
   [issue #33118](https://github.com/dart-lang/sdk/issues/33118) and
   [issue #27776.](https://github.com/dart-lang/sdk/issues/27776)
   
-  **目前只有 dart2js 支持延迟加载** 
+  **目前只有 dart2js 支持延迟加载**。 
   Flutter、Dart VM以及 DartDevc 目前都不支持延迟加载。
   你可以查阅 [issue #33118](https://github.com/dart-lang/sdk/issues/33118) 
   和 [issue #27776](https://github.com/dart-lang/sdk/issues/27776) 获取更多的相关信息。
@@ -5051,7 +5051,7 @@ Keep in mind the following when you use deferred loading:
   Instead, consider moving interface types to a library imported by
   both the deferred library and the importing file.
 
-  导入文件的时候无法使用延迟加载库中的类型。如果你需要使用类型，则考虑吧接口类型转移到另一个库中然后让两个库都分别导入这个接口库。
+  导入文件的时候无法使用延迟加载库中的类型。如果你需要使用类型，则考虑把接口类型转移到另一个库中然后让两个库都分别导入这个接口库。
 
 * Dart implicitly inserts `loadLibrary()` into the namespace that you define
   using <code>deferred as <em>namespace</em></code>.
@@ -5124,7 +5124,7 @@ you have two options:
 
 * Use `async` and `await`.
 
-  ���用 `async` 和 `await`。
+  使用 `async` 和 `await`。
 
 * Use the Future API, as described
   [in the library tour](/guides/libraries/library-tour#future).
